@@ -94,6 +94,12 @@ const Pokedex = ({ name }) => {
       />
 
       <PokemonList pokemons={itemsInCurrentPage} />
+
+      <Pagination
+        LastPage={LastPage}
+        pagesInCurrentBlock={pagesInCurrentBlock}
+        setcurrentPage={setcurrentPage}
+      />
     </main>
   );
 };

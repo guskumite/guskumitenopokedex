@@ -2,7 +2,7 @@ import "boxicons";
 
 const Pagination = ({ LastPage, pagesInCurrentBlock, setcurrentPage }) => {
   return (
-    <ul className="flex flex-row">
+    <ul className="flex flex-row mt-4">
       <li>
         <box-icon className="w-[0.3rem] border-2" name="arrow-back"></box-icon>
       </li>
