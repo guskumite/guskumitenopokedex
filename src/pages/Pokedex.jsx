@@ -72,9 +72,6 @@ const Pokedex = ({ name }) => {
               value={pokemonType}
               onChange={handleChange(setPokemonType)}
             >
-              <option value="">
-                All pokemons Subete no pokemon すべてのポケモン
-              </option>
               <option value="rock">Rock Rokku ロック</option>
               <option value="grass">Grass Kusa 草</option>
               <option value="fire">Fire Hi 火</option>
