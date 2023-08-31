@@ -54,15 +54,15 @@ const PokemonDetail = () => {
                   #{pokemonData?.id}
                 </span>
                 <div className="relative flex flex-row">
-                  <span className="absolute border-t-2 top-[85px] border-gray-200 w-[20vw]"></span>
+                  <span className="absolute border-t-2 top-[95px] border-gray-200 w-[20vw]"></span>
                   <span className="absolute top-10 left-1/2 translate-y-3/4 -translate-x-1/2 text-3xl font-bold">
                     {pokemonData?.name}
                   </span>
-                  <span className="absolute border-t-2 top-[85px] right-[5px] border-gray-200 w-[20vw]"></span>
+                  <span className="absolute border-t-2 top-[95px] right-[5px] border-gray-200 w-[20vw]"></span>
                 </div>
                 <div className="relative flex flex-row">
                   <div className="absolute flex-flex-col w-[20vw]">
-                    <div className="relative top-[120px] left-[10vw]">
+                    <div className="relative top-[120px] -left-[2rem]">
                       Weight:
                     </div>
                     <div className="relative top-[130px] left-[10vw]">
