@@ -41,7 +41,10 @@ const Pokedex = ({ name }) => {
   useEffect(() => {
     if (pokemonType) {
       //Do the request of the pokemons by type
-      getPokemonsByType(pokemonType).then((data) => setPokemons(data));
+      getPokemonsByType(pokemonType).then((data) => {
+        setcurrentPage(1);
+        setPokemons(data);
+      });
     }
   }, [pokemonType]);
 
