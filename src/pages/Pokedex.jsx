@@ -3,6 +3,8 @@ import HeaderPokedex from "../components/layout/HeaderPokedex";
 import { getAllPokemons, getPokemonsByType } from "../services/pokemons";
 import PokemonList from "../pokedex/PokemonList";
 import axios from "axios";
+import { paginateData } from "../utils/pagination";
+import Pagination from "../pokedex/Pagination";
 
 // It is pending to move all the logical components to usePokedex.js on hooks
 
@@ -10,6 +12,7 @@ const Pokedex = ({ name }) => {
   const [pokemons, setPokemons] = useState([]);
   const [pokemonName, setPokemonName] = useState("");
   const [pokemonType, setPokemonType] = useState("");
+  const [currentPage, setcurrentPage] = useState(1);
 
   /*  const handleChangeInput = (e) => {
     setPokemonName(e.target.value);
@@ -43,6 +46,11 @@ const Pokedex = ({ name }) => {
     }
   }, [pokemonType]);
 
+  const { itemsInCurrentPage, LastPage, pagesInCurrentBlock } = paginateData(
+    pokemonsByName,
+    currentPage
+  );
+
   return (
     <main>
       <HeaderPokedex />
@@ -68,11 +76,25 @@ const Pokedex = ({ name }) => {
                 All pokemons Subete no pokemon すべてのポケモン
               </option>
               <option value="rock">Rock Rokku ロック</option>
+              <option value="grass">Grass Kusa 草</option>
+              <option value="fire">Fire Hi 火</option>
+              <option value="water">Water Mizu 水</option>
+              <option value="bug">Bug Bagu バグ</option>
+              <option value="normal">Normal Futsü 普通</option>
+              <option value="ground">Ground Jimen 地面</option>
+              <option value="steel">Steel Kötetsu 鋼鉄</option>
+              <option value="ice">Ice Köri 氷</option>
             </select>
           </div>
         </form>
       </section>
-      <PokemonList pokemons={pokemonsByName} />
+
+      <Pagination
+        LastPage={LastPage}
+        pagesInCurrentBlock={pagesInCurrentBlock}
+      />
+
+      <PokemonList pokemons={itemsInCurrentPage} />
     </main>
   );
 };
