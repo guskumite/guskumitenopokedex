@@ -91,6 +91,7 @@ const Pokedex = ({ name }) => {
         LastPage={LastPage}
         pagesInCurrentBlock={pagesInCurrentBlock}
         setcurrentPage={setcurrentPage}
+        currentPage={currentPage}
       />
 
       <PokemonList pokemons={itemsInCurrentPage} />
@@ -99,6 +100,7 @@ const Pokedex = ({ name }) => {
         LastPage={LastPage}
         pagesInCurrentBlock={pagesInCurrentBlock}
         setcurrentPage={setcurrentPage}
+        currentPage={currentPage}
       />
     </main>
   );
