@@ -14,7 +14,7 @@ const PokemonCard = ({ pokemonUrl }) => {
     getPokemonByUrl(pokemonUrl)
       .then((data) => setPokemonInfo(data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [pokemonUrl]);
 
   return (
     <Link

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import HeaderPokedex from "../components/layout/HeaderPokedex";
 import { getAllPokemons, getPokemonsByType } from "../services/pokemons";
 import PokemonList from "../pokedex/PokemonList";
-import axios from "axios";
 import { paginateData } from "../utils/pagination";
 import Pagination from "../pokedex/Pagination";
 
@@ -11,7 +10,7 @@ import Pagination from "../pokedex/Pagination";
 const Pokedex = ({ name }) => {
   const [pokemons, setPokemons] = useState([]);
   const [pokemonName, setPokemonName] = useState("");
-  const [pokemonType, setPokemonType] = useState("");
+  const [pokemonType, setPokemonType] = useState("rock");
   const [currentPage, setcurrentPage] = useState(1);
 
   /*  const handleChangeInput = (e) => {
@@ -81,6 +80,8 @@ const Pokedex = ({ name }) => {
               <option value="ground">Ground Jimen 地面</option>
               <option value="steel">Steel Kötetsu 鋼鉄</option>
               <option value="ice">Ice Köri 氷</option>
+              <option value="dark">Dark Kurai 暗い</option>
+              <option value="poison">Poison Doku 毒</option>
             </select>
           </div>
         </form>
@@ -89,6 +90,7 @@ const Pokedex = ({ name }) => {
       <Pagination
         LastPage={LastPage}
         pagesInCurrentBlock={pagesInCurrentBlock}
+        setcurrentPage={setcurrentPage}
       />
 
       <PokemonList pokemons={itemsInCurrentPage} />
