@@ -1,17 +1,19 @@
 import FooterPokeball from "../components/layout/FooterPokeball";
 import { useDispatch } from "react-redux";
 import { loginTrainer } from "../store/slices/trainer.slice";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const dispatch = useDispatch();
 
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const trainerName = e.target.trainerName.value;
     dispatch(loginTrainer(trainerName));
     localStorage.setItem("trainer", trainerName);
     window.alert("Welcome " + trainerName);
-    window.location("localhost/pokedex");
+    navigate("/pokedex");
   };
 
   const theName = localStorage.getItem("trainer");
