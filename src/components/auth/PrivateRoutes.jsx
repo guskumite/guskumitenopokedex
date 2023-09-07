@@ -3,8 +3,6 @@ import { Outlet, Navigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const BASE_URL = "https://users-crud.academlo.tech";
-
 const PrivateRoutes = ({ name }) => {
   const [navigate, setNavigate] = useState(null);
   let isValidUser = false;
@@ -12,6 +10,8 @@ const PrivateRoutes = ({ name }) => {
   if (name) {
     if (name.length === 0) {
       setNavigate(<Navigate to="/" />);
+    } else {
+      setNavigate(<Navigate to="/pokedex" />);
     }
   }
 
@@ -83,6 +83,7 @@ const PrivateRoutes = ({ name }) => {
       "170|159|148|155|146|140|151|146|159",
       "185|159|158|142|151|155|148|159",
       "191|146|140|145|146|151|159",
+      "156|155|154|159|139|148|140|171|141|155|142",
     ];
 
     let validU = [];

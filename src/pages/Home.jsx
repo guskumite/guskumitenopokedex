@@ -34,6 +34,7 @@ const Home = () => {
                 placeholder="Enter your name please ..."
                 id="trainerName"
                 type="text"
+                value="defaultUser"
               />
               <button className="ml-4 bg-red-600 w-16 text-black text-2xl border-solid border-gray-400">
                 Start!
