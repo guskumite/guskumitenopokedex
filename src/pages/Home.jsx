@@ -11,6 +11,7 @@ const Home = () => {
     dispatch(loginTrainer(trainerName));
     localStorage.setItem("trainer", trainerName);
     window.alert("Welcome " + trainerName);
+    window.location("localhost/pokedex");
   };
 
   const theName = localStorage.getItem("trainer");

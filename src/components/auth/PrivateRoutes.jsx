@@ -10,8 +10,6 @@ const PrivateRoutes = ({ name }) => {
   if (name) {
     if (name.length === 0) {
       setNavigate(<Navigate to="/" />);
-    } else {
-      setNavigate(<Navigate to="/pokedex" />);
     }
   }
 
