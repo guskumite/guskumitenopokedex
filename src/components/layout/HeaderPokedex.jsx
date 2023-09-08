@@ -1,7 +1,7 @@
 const HeaderPokedex = () => {
   return (
     <main>
-      <section className="w-[18rem]">
+      <section className="w-[95%]">
         <div className="h-16 bg-red-600 w-full">
           <img
             className="h-full aspect[3/2] hover:h-[14vh]"
