@@ -55,7 +55,7 @@ const Pokedex = ({ name }) => {
   );
 
   return (
-    <main className="max-w-[96%]">
+    <main className="max-w-[99%]">
       <HeaderPokedex />
       <section>
         <p className="text-red-700 font-bold text-lg">

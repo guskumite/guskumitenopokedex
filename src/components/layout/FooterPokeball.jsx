@@ -8,7 +8,7 @@ const FooterPokeball = ({ name }) => {
 
   return (
     <main>
-      <section className="w-[95%]">
+      <section className="w-full">
         <div className="h-16 bg-red-600 w-full"></div>
         <div className="h-14 bg-black relative w-full">
           <div
