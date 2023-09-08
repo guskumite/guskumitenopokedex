@@ -50,28 +50,28 @@ const PokemonDetail = () => {
             </header>
             <section className="">
               <div className="flex flex-col text-center relative">
-                <span className="absolute left-1/2 -translate-x-1/2 top-5 text-xl font-bold border-2 w-16 border-blue-200">
+                <span className="absolute left-1/2 -translate-x-1/2 top-[4rem] text-xl font-bold border-2 w-16 border-blue-200">
                   #{pokemonData?.id}
                 </span>
                 <div className="relative flex flex-row">
                   <span className="absolute border-t-2 top-[7rem] left-[0.5rem] border-gray-200 w-[20vw]"></span>
-                  <span className="mb-8 absolute top-10 left-1/2 translate-y-3/4 -translate-x-1/2 text-3xl font-bold">
+                  <span className="absolute top-[5rem] left-1/2 translate-y-3/4 -translate-x-1/2 text-3xl font-bold">
                     {pokemonData?.name}
                   </span>
                   <span className="absolute border-t-2 top-[7rem] right-[0.5rem] border-gray-200 w-[20vw]"></span>
                 </div>
                 <div className="relative flex flex-row">
                   <div className="absolute flex-flex-col w-[20vw]">
-                    <div className="relative top-[120px] left-[2.5rem]">
+                    <div className="relative top-[25rem] left-[2.5rem]">
                       Weight:
                     </div>
-                    <div className="relative top-[130px] left-[2.5rem]">
+                    <div className="relative top-[30rem] left-[2.5rem]">
                       {pokemonData?.weight}
                     </div>
                   </div>
                   <div className="absolute flex flex-col w-[20vw] right-[5.5rem]">
-                    <div className="relative top-[120px] ">Height:</div>
-                    <div className="relative top-[130px] left-[6rem]">
+                    <div className="relative top-[25rem] ">Height:</div>
+                    <div className="relative top-[30rem] left-[6rem]">
                       {pokemonData?.height}
                     </div>
                   </div>
