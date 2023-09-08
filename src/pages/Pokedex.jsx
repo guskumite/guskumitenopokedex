@@ -55,13 +55,13 @@ const Pokedex = ({ name }) => {
   );
 
   return (
-    <main className="max-w-[99%]">
+    <main className="w-[99%]">
       <HeaderPokedex />
       <section>
         <p className="text-red-700 font-bold text-lg">
           <span> Welcome {name}, here you can find your favorite pokemon</span>
         </p>
-        <form>
+        <form className="w-[99%]">
           <div className="flex flex-cols-[1fr,1fr] w-full mt-4">
             <input
               value={pokemonName}
