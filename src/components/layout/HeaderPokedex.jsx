@@ -10,7 +10,7 @@ const HeaderPokedex = () => {
         </div>
         <div className="h-14 bg-black relative">
           <div
-            className="h-16 aspect-square bg-white rounded-full absolute left-3/4
+            className="h-16 aspect-square bg-white rounded-full absolute left-7/8
           -translate-x-1/2 -top-8 border-[8px] border-black hover:bg-red hover:left-1/2"
           >
             <div
