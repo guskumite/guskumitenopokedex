@@ -7,6 +7,7 @@ const HeaderPokedex = () => {
             className="h-full aspect[3/2] hover:h-[14vh]"
             src="/images/pokedexlogo.png"
           />
+          <div className="h-8 bg-red-600 w-full"></div>
         </div>
         <div className="h-14 bg-black relative w-full">
           <div

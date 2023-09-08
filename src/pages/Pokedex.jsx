@@ -71,7 +71,7 @@ const Pokedex = ({ name }) => {
               type="text"
             />
             <select
-              className="ml-4"
+              className="ml-4 w-[45%] text-sm"
               value={pokemonType}
               onChange={handleChange(setPokemonType)}
             >
