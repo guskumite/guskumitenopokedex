@@ -4,18 +4,18 @@ const HeaderPokedex = () => {
       <section>
         <div className="h-16 bg-red-600">
           <img
-            className="h-full aspect[3/2] hover:h-[14vh]"
+            className="h-full aspect[3/2] hover:h-[14vh] z-2"
             src="/images/pokedexlogo.png"
           />
         </div>
         <div className="h-14 bg-black relative">
           <div
-            className="h-[5rem] aspect-square bg-white rounded-full absolute left-3/4
-          -translate-x-1/2 -top-8 border-[8px] border-black hover:bg-red hover:left-1/2 md:hidden"
+            className="h-16 aspect-square bg-white rounded-full absolute left-3/4
+          -translate-x-1/2 -top-8 border-[8px] border-black hover:bg-red hover:left-1/2 z-1"
           >
             <div
-              className="h-[3.12rem] aspect-square bg-[#333] rounded-full border-[5px] border-black
-              mt-[4px] ml-[4px] hover:bg-white md:hidden"
+              className="h-10 aspect-square bg-[#333] rounded-full border-[5px] border-black
+              mt-[4px] ml-[4px] hover:bg-white z-1"
             ></div>
           </div>
         </div>
