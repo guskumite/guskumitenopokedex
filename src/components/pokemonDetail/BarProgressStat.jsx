@@ -14,7 +14,7 @@ const BarProgressStat = ({ stat }) => {
       <div className="h-6 bg-slate-300 rounded-md">
         <div
           style={{ width: getPercentProgressBar(stat.value) }}
-          className="ml-[0.5rem] mr-[0.5rem] h-full bg-gradient-to-r from-yellow-500 to-orange-500"
+          className="h-full bg-gradient-to-r from-yellow-500 to-orange-500"
         ></div>
       </div>
     </article>
