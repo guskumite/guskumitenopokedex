@@ -2,7 +2,7 @@ const HeaderPokedex = () => {
   return (
     <main>
       <section>
-        <div className="h-16 bg-red-600 z-[2]">
+        <div className="h-16 bg-red-600">
           <img
             className="h-full aspect[3/2] hover:h-[14vh]"
             src="/images/pokedexlogo.png"
@@ -10,7 +10,7 @@ const HeaderPokedex = () => {
         </div>
         <div className="h-14 bg-black relative">
           <div
-            className="h-16 aspect-square bg-white rounded-full absolute right-[0.9rem]
+            className="h-16 aspect-square bg-white rounded-full absolute right-[0.2rem]
           -translate-x-1/2 -top-8 border-[8px] border-black hover:bg-red hover:left-1/2"
           >
             <div
