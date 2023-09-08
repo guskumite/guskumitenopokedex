@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 
 const PrivateRoutes = ({ name }) => {
   const [navigate, setNavigate] = useState(null);
-  let isValidUser = false;
+  /*  let isValidUser = false; */
+  // To avoid user validation the init value for isValidUser is set to true
+  let isValidUser = true;
 
   if (name) {
     if (name.length === 0) {

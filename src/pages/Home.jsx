@@ -19,7 +19,7 @@ const Home = () => {
   const theName = localStorage.getItem("trainer");
 
   return (
-    <main className="min-h-screen grid grid-rows-[1fr_auto]">
+    <main className="min-h-screen grid grid-rows-[1fr_auto] max-h-[90%]">
       <section>
         <article className="ml-4">
           <div>
@@ -37,7 +37,6 @@ const Home = () => {
                 placeholder="Enter your name please ..."
                 id="trainerName"
                 type="text"
-                value="defaultUser"
               />
               <button className="ml-4 bg-red-600 w-16 text-black text-2xl border-solid border-gray-400">
                 Start!

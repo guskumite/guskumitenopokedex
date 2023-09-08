@@ -4,13 +4,14 @@ import { getAllPokemons, getPokemonsByType } from "../services/pokemons";
 import PokemonList from "../pokedex/PokemonList";
 import { paginateData } from "../utils/pagination";
 import Pagination from "../pokedex/Pagination";
+import FooterPokeball from "../components/layout/FooterPokeball";
 
 // It is pending to move all the logical components to usePokedex.js on hooks
 
 const Pokedex = ({ name }) => {
   const [pokemons, setPokemons] = useState([]);
   const [pokemonName, setPokemonName] = useState("");
-  const [pokemonType, setPokemonType] = useState("rock");
+  const [pokemonType, setPokemonType] = useState("");
   const [currentPage, setcurrentPage] = useState(1);
 
   /*  const handleChangeInput = (e) => {
@@ -54,7 +55,7 @@ const Pokedex = ({ name }) => {
   );
 
   return (
-    <main>
+    <main className="max-w-[90%]">
       <HeaderPokedex />
       <section>
         <p className="text-red-700 font-bold text-lg">
@@ -74,6 +75,7 @@ const Pokedex = ({ name }) => {
               value={pokemonType}
               onChange={handleChange(setPokemonType)}
             >
+              <option value="">All Subete no pokemon すべてのポケモン</option>
               <option value="rock">Rock Rokku ロック</option>
               <option value="grass">Grass Kusa 草</option>
               <option value="fire">Fire Hi 火</option>
@@ -105,6 +107,7 @@ const Pokedex = ({ name }) => {
         setcurrentPage={setcurrentPage}
         currentPage={currentPage}
       />
+      <FooterPokeball name={name} />
     </main>
   );
 };
