@@ -113,7 +113,7 @@ const PokemonDetail = () => {
                   </span>
                 </div>
               </div>
-              <section className="absolute top-[22rem] mt-[330px] ml-[0.5ren] mr-[0.5rem] w-[80%]">
+              <section className="absolute top-[22rem] mt-[330px] ml-[0.5ren] mr-[0.5rem] w-[60%]">
                 <StatBarList stats={pokemonData?.stats} />
               </section>
             </section>
