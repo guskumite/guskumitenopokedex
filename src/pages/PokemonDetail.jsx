@@ -69,9 +69,9 @@ const PokemonDetail = () => {
                       {pokemonData?.weight}
                     </div>
                   </div>
-                  <div className="absolute flex flex-col w-[20vw] left-[4rem]">
+                  <div className="absolute flex flex-col w-[20vw] left-[6rem]">
                     <div className="relative top-[120px] ">Height:</div>
-                    <div className="relative top-[130px] left-[4rem]">
+                    <div className="relative top-[130px] left-[6rem]">
                       {pokemonData?.height}
                     </div>
                   </div>
@@ -113,7 +113,7 @@ const PokemonDetail = () => {
                   </span>
                 </div>
               </div>
-              <div className="mt-[330px]">
+              <div className="mt-[330px] ml-[0.5ren] mr-[0.5rem]">
                 <StatBarList stats={pokemonData?.stats} />
               </div>
             </section>
